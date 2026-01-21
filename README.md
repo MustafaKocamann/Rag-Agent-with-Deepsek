@@ -345,7 +345,7 @@ Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICE
 **Mustafa Kocaman**
 
 - GitHub: [@MustafaKocamann](https://github.com/MustafaKocamann)
-- LinkedIn: [Profiliniz]
+- LinkedIn: https://www.linkedin.com/in/mustafakocamann/
 
 ---
 
