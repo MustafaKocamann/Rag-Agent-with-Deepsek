@@ -264,48 +264,6 @@ related_docs = find_related_documents(prompt, k=10)  # k=15 veya k=20 deneyin
 
 ---
 
-## 🚢 Deployment (Yerel Sınırlama)
-
-### ⚠️ Streamlit Cloud'a Deploy Edilemez
-
-Bu proje **Ollama** kullandığı için Streamlit Cloud'a deploy edilemez çünkü:
-- ❌ Ollama yerel makine gerektir
-- ❌ Streamlit Cloud sanal sunucularda çalışır
-- ❌ Modelleri cloud'a yükleyemezsiniz
-
-### ✅ Alternatif Deployment Seçenekleri
-
-#### 1. Docker ile Yerel Sunucu
-```dockerfile
-FROM python:3.10-slim
-
-# Ollama kurulumu
-RUN curl -fsSL https://ollama.com/install.sh | sh
-
-# Proje kurulumu
-COPY . /app
-WORKDIR /app
-RUN pip install -r requirements.txt
-
-# Modelleri indir
-RUN ollama pull deepseek-r1:8b
-RUN ollama pull mxbai-embed-large
-
-CMD ["streamlit", "run", "rag_deepsek.py"]
-```
-
-#### 2. Modal/Replicate Gibi GPU Platformları
-- Ollama'yı API modunda çalıştırın
-- Streamlit'i ayrı deploy edin
-- API çağrıları ile bağlayın
-
-#### 3. VPS/Dedicated Server
-- DigitalOcean, Linode, AWS EC2
-- GPU destekli instance seçin
-- Ollama + Streamlit kurun
-- Reverse proxy (Nginx) ile yayınlayın
-
----
 
 ## 🛠️ Teknik Detaylar
 
