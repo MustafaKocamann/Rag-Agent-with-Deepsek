@@ -244,17 +244,23 @@ related_docs = find_related_documents(prompt, k=10)  # k=15 veya k=20 deneyin
 
 ## 🎨 Ekran Görüntüleri
 
-### Ana Arayüz
-```
-📚 DocuMind AI
-🚀 Gelişmiş Doküman Analiz Asistanı
+### 📝 Ana Arayüz - Doküman Yükleme
+<div align="center">
+  <img src="screenshots/Ekran görüntüsü 2026-01-21 174835.png" alt="PDF Upload Interface" width="900"/>
+  <p><em>Sol panelden PDF dokümanı yükleyin, sistem otomatik olarak indexleme yapacak</em></p>
+</div>
 
-[Sidebar]              [Chat Area]
-📂 Dosya Merkezi       💬 Sohbet
-└─ PDF Yükle          └─ User: Makine öğrenmesi nedir?
-└─ 🗑️ Temizle          └─ AI: [Doküman bazlı cevap]
-└─ 🔄 Sıfırla          └─ 📊 Retrieval Stats
-```
+### 💬 Chat Interface - Soru-Cevap
+<div align="center">
+  <img src="screenshots/Ekran görüntüsü 2026-01-21 175116.png" alt="Chat Interface" width="900"/>
+  <p><em>Doküman hakkında sorular sorabilir, AI anında doküman bazlı cevaplar verecektir</em></p>
+</div>
+
+### 📊 Retrieval Stats - Arama Sonuçları
+<div align="center">
+  <img src="screenshots/Ekran görüntüsü 2026-01-21 175348.png" alt="Retrieval Stats" width="900"/>
+  <p><em>Hangi chunks'ların kullanıldığını görebilir, top sonuçların preview'ını inceleyebilirsiniz</em></p>
+</div>
 
 ---
 
